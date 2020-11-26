@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../Downloads/Arche de mariage 7.jpg</file>
+        <file>../../Downloads/menu.jpg</file>
+        <file>../../Downloads/salle.jpg</file>
+        <file>../../Downloads/wedding-planner-grenoble.jpg</file>
+        <file>../../Downloads/login.jpg</file>
+        <file>../../Downloads/Illustration-statistiques.jpg</file>
+        <file>../../Downloads/images (1).jpg</file>
+    </qresource>
+</RCC>
