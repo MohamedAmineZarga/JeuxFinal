@@ -67,94 +67,9 @@ void gestiondereservation::on_pushButtonsupprimerclient_clicked()
 
 
 
-
-
-/*void gestiondereservation::par_defaut(){
-
- // ui->tabWidget->setStyleSheet("");
-  ui->tabWidget->setStyleSheet
-  (
-    "QLabel{"
-    "font: 10pt Arial;"
-    "color:black;"
-    "}"
-    "QLineEdit {"
-    "background:transparent;"
-    "border:none;"
-    "border-bottom:1px solid #2da5d5;"
-    "font: 12pt Arial;"
-    "color: #2da5d5;"
-    "}"
-    "QPushButton{"
-    "font: 12pt Arial ;"
-    "color:white;"
-    "background-color :#2da5d5;"
-    "border-bottom-left-radius: 10px 10px;"
-    "border-bottom-right-radius: 10px 10px;"
-    "}"
-    "QPushButton:hover{"
-    "background-color:rgba(126,214,216,0.8);}"
-    "QComboBox{"
-    "font: 12pt Arial;"
-    "color:white;"
-    "background-color :#2da5d5;"
-    "border-top-right-radius: 5px 5px;"
-    "border-bottom-right-radius: 5px 5px;"
-    "}"
-
-    "QComboBox:drop-down {"
-
-    "  border:none;} "
-    "QComboBox QAbstractItemView {"
-    " font: 12pt Arial;"
-    "color:white;"
-    "background-color :#2da5d5;"
-    "selection-background-color: rgb(254, 120, 126);}" );
-ui->tabWidget_4->setStyleSheet(
-                      "QLabel{"
-                      "font: 10pt Arial;"
-                      "color:black;"
-                      "}"
-                      "QLineEdit {"
-                      "background:transparent;"
-                      "border:none;"
-                      "border-bottom:1px solid #2da5d5;"
-                      "font: 12pt Arial;"
-                      "color: #2da5d5;"
-                      "}"
-                      "QPushButton{"
-                      "font: 12pt Arial ;"
-                      "color:white;"
-                      "background-color :#2da5d5;"
-                      "border-bottom-left-radius: 10px 10px;"
-                      "border-bottom-right-radius: 10px 10px;"
-                      "}"
-                      "QPushButton:hover{"
-                      "background-color:rgba(126,214,216,0.8);}"
-                      "QComboBox{"
-                      "font: 12pt Arial;"
-                      "color:white;"
-                      "background-color :#2da5d5;"
-                      "border-top-right-radius: 5px 5px;"
-                      "border-bottom-right-radius: 5px 5px;"
-                      "}"
-
-                      "QComboBox:drop-down {"
-
-                      "  border:none;} "
-                      "QComboBox QAbstractItemView {"
-                      " font: 12pt Arial;"
-                      "color:white;"
-                      "background-color :#2da5d5;"
-                      "selection-background-color: rgb(254, 120, 126);}" );
-
-}
-
-*/
-
 void gestiondereservation::on_pushButton_2_clicked()
 {bool test; QMessageBox msgBox;
-
+    if(ui->lineeditcinsup->text()!=""){
     int cin=ui->lineeditcinsup->text().toInt();
     QString nom=ui->lineEditnom_6->text();
     QString prenom=ui->lineEditprenom_7->text();
@@ -171,7 +86,7 @@ void gestiondereservation::on_pushButton_2_clicked()
      if(test)
        {  msgBox.setText("Modifier avec succes.");
          ui->tableView_2->setModel(c.afficher_client());
-     }
+     }}
      else
          msgBox.setText("Echec de modification");
      msgBox.exec();
@@ -211,11 +126,23 @@ void gestiondereservation::on_tableView_2_activated(const QModelIndex &index)
 
 
 void gestiondereservation::on_pushButtonchercher_clicked()
-{
+{QMessageBox m;
         client c;
+        if(ui->lineeditcinsup->text()!="" && ui->lineEditnom_6->text()!="" and ui->lineEditprenom_7->text()!="")
+        {
         c.chercher_client(ui->lineeditcinsup->text().toInt(),ui->lineEditnom_6->text(),ui->lineEditprenom_7->text());
         ui->tableView_2->setModel(c.afficher_unclient());
+        }
+        else if(ui->lineeditcinsup->text()=="" && ui->lineEditnom_6->text()!="" and ui->lineEditprenom_7->text()!="")
+            m.setText("s'il vous plait il vous manque à ecrire le cin du client à chercher");
+        else if (ui->lineeditcinsup->text()!="" && ui->lineEditnom_6->text()=="" and ui->lineEditprenom_7->text()!="")
+            m.setText("s'il vous plait il vous manque à ecrire le nom du client à chercher");
+        else if (ui->lineeditcinsup->text()!="" && ui->lineEditnom_6->text()!="" and ui->lineEditprenom_7->text()=="")
+            m.setText("s'il vous plait il vous manque à ecrire le prenom du client à chercher");
+        else
+            m.setText("s'il vous plait ecrire le cin et le nom et le prenom du client à chercher");
 
+        m.exec();
 }
 
 
@@ -224,6 +151,11 @@ void gestiondereservation::on_pushButtonchercher_clicked()
 
 void gestiondereservation::on_comboBox_activated(const QString &arg1)
 {client c;
+    if(arg1=="")
+    {
+        ui->tableView_2->setModel(c.afficher_client());
+    }
+    else
     ui->tableView_2->setModel(c.afficher_clienttrier(arg1));
 }
 

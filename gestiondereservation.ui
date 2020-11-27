@@ -17,13 +17,14 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>40</y>
+     <y>20</y>
      <width>1511</width>
      <height>631</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
+    <string notr="true">font: 10pt Arial ;
+ </string>
    </property>
    <property name="currentIndex">
     <number>1</number>
@@ -34,7 +35,7 @@
       <x>0</x>
       <y>0</y>
       <width>1511</width>
-      <height>538</height>
+      <height>529</height>
      </rect>
     </property>
     <attribute name="label">
@@ -358,7 +359,7 @@ color: rgb(255, 85, 0);</string>
       <x>0</x>
       <y>0</y>
       <width>1511</width>
-      <height>538</height>
+      <height>529</height>
      </rect>
     </property>
     <attribute name="label">
@@ -372,6 +373,10 @@ color: rgb(255, 85, 0);</string>
        <width>1511</width>
        <height>551</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*background-color: rgb(232, 217, 255);*/
+background-color: rgb(245, 203, 255);</string>
      </property>
      <property name="currentIndex">
       <number>1</number>
@@ -389,6 +394,13 @@ color: rgb(255, 85, 0);</string>
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt Arial ;
+    color:white;
+    background-color :#2da5d5;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;</string>
+       </property>
        <property name="text">
         <string>Ajouter</string>
        </property>
@@ -399,19 +411,31 @@ color: rgb(255, 85, 0);</string>
          <x>122</x>
          <y>22</y>
          <width>301</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QFormLayout" name="formLayout">
         <item row="0" column="0">
          <widget class="QLabel" name="labelcin">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>CIN : </string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEditcin"/>
+         <widget class="QLineEdit" name="lineEditcin">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -421,41 +445,65 @@ color: rgb(255, 85, 0);</string>
          <x>121</x>
          <y>83</y>
          <width>301</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QLabel" name="labelnom">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Nom :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditnom"/>
+         <widget class="QLineEdit" name="lineEditnom">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget_3">
        <property name="geometry">
         <rect>
-         <x>121</x>
-         <y>146</y>
+         <x>120</x>
+         <y>140</y>
          <width>301</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
          <widget class="QLabel" name="labelprenom">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Prenom :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditprenom"/>
+         <widget class="QLineEdit" name="lineEditprenom">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -465,19 +513,31 @@ color: rgb(255, 85, 0);</string>
          <x>121</x>
          <y>270</y>
          <width>311</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_5">
         <item>
          <widget class="QLabel" name="labeladresse">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Adresse : </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditadresse"/>
+         <widget class="QLineEdit" name="lineEditadresse">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -487,12 +547,16 @@ color: rgb(255, 85, 0);</string>
          <x>121</x>
          <y>332</y>
          <width>311</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
          <widget class="QLabel" name="labelemail">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>E-mail :</string>
           </property>
@@ -500,6 +564,13 @@ color: rgb(255, 85, 0);</string>
         </item>
         <item>
          <widget class="QLineEdit" name="lineEditemail">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
           <property name="placeholderText">
            <string/>
           </property>
@@ -513,19 +584,30 @@ color: rgb(255, 85, 0);</string>
          <x>120</x>
          <y>390</y>
          <width>311</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
          <widget class="QLabel" name="labelnumero">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;\n    color:black;</string>
+          </property>
           <property name="text">
            <string>Numero de telephone :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditnumero"/>
+         <widget class="QLineEdit" name="lineEditnumero">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -535,19 +617,31 @@ color: rgb(255, 85, 0);</string>
          <x>120</x>
          <y>440</y>
          <width>311</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>sexe :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineeditsexe"/>
+         <widget class="QLineEdit" name="lineeditsexe">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -557,21 +651,150 @@ color: rgb(255, 85, 0);</string>
          <x>120</x>
          <y>200</y>
          <width>311</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
          <widget class="QLabel" name="labeldate">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Date de naissance : </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditdate"/>
+         <widget class="QLineEdit" name="lineEditdate">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>460</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/ajouter.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>330</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/email.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>270</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/adresse.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>390</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/tel.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_5" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>440</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/sexe.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>200</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/date.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_7" native="true">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>140</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/nom.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_8" native="true">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/nom.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_9" native="true">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/cin.png);</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tab_7">
@@ -581,15 +804,20 @@ color: rgb(255, 85, 0);</string>
       <widget class="QPushButton" name="pushButton_7">
        <property name="geometry">
         <rect>
-         <x>350</x>
+         <x>870</x>
          <y>0</y>
          <width>131</width>
          <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">
-color: rgb(255, 85, 0);</string>
+        <string notr="true">font: 10pt Arial ;
+    color:white;
+    background-color :#2da5d5;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+
+</string>
        </property>
        <property name="text">
         <string>imprimer</string>
@@ -598,14 +826,18 @@ color: rgb(255, 85, 0);</string>
       <widget class="QPushButton" name="pushButtonsupprimerclient">
        <property name="geometry">
         <rect>
-         <x>510</x>
+         <x>690</x>
          <y>0</y>
          <width>131</width>
          <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 0, 0);</string>
+        <string notr="true">font: 10pt Arial ;
+    color:white;
+    background-color :#2da5d5;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;</string>
        </property>
        <property name="text">
         <string>supprimer</string>
@@ -616,137 +848,168 @@ color: rgb(255, 85, 0);</string>
         <rect>
          <x>0</x>
          <y>50</y>
-         <width>1021</width>
+         <width>1041</width>
          <height>461</height>
         </rect>
        </property>
-      </widget>
-      <widget class="QLineEdit" name="lineeditcinsup">
-       <property name="geometry">
-        <rect>
-         <x>1290</x>
-         <y>20</y>
-         <width>131</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="maxLength">
-        <number>8</number>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>1150</x>
-         <y>20</y>
-         <width>131</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>donner le cin de client : </string>
+       <property name="styleSheet">
+        <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-color: rgb(255, 16, 203);
+gridline-color: rgb(255, 255, 255);</string>
        </property>
       </widget>
       <widget class="QWidget" name="layoutWidget_41">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>70</y>
-         <width>201</width>
-         <height>24</height>
+         <x>1200</x>
+         <y>100</y>
+         <width>281</width>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_36">
         <item>
          <widget class="QLabel" name="labelnom_6">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Nom :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditnom_6"/>
+         <widget class="QLineEdit" name="lineEditnom_6">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget_51">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>100</y>
-         <width>201</width>
-         <height>24</height>
+         <x>1200</x>
+         <y>140</y>
+         <width>281</width>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_45">
         <item>
          <widget class="QLabel" name="labelprenom_7">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Prenom :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditprenom_7"/>
+         <widget class="QLineEdit" name="lineEditprenom_7">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget_52">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>130</y>
-         <width>261</width>
-         <height>24</height>
+         <x>1200</x>
+         <y>190</y>
+         <width>281</width>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_46">
         <item>
          <widget class="QLabel" name="labeldate_7">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Date de naissance : </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditdate_7"/>
+         <widget class="QLineEdit" name="lineEditdate_7">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget_53">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>160</y>
-         <width>261</width>
-         <height>24</height>
+         <x>1200</x>
+         <y>240</y>
+         <width>281</width>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_47">
         <item>
          <widget class="QLabel" name="labeladresse_7">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Adresse : </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditadresse_7"/>
+         <widget class="QLineEdit" name="lineEditadresse_7">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget_54">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>190</y>
-         <width>261</width>
-         <height>24</height>
+         <x>1200</x>
+         <y>300</y>
+         <width>281</width>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_48">
         <item>
          <widget class="QLabel" name="labelemail_7">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>E-mail :</string>
           </property>
@@ -754,6 +1017,13 @@ color: rgb(255, 85, 0);</string>
         </item>
         <item>
          <widget class="QLineEdit" name="lineEditemail_7">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
           <property name="placeholderText">
            <string/>
           </property>
@@ -764,55 +1034,86 @@ color: rgb(255, 85, 0);</string>
       <widget class="QWidget" name="layoutWidget_55">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>220</y>
-         <width>261</width>
+         <x>1200</x>
+         <y>350</y>
+         <width>281</width>
          <height>31</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_49">
         <item>
          <widget class="QLabel" name="labelnumero_7">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>Numero de telephone :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEditnumero_7"/>
+         <widget class="QLineEdit" name="lineEditnumero_7">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QWidget" name="layoutWidget_56">
        <property name="geometry">
         <rect>
-         <x>1220</x>
-         <y>260</y>
+         <x>1200</x>
+         <y>400</y>
          <width>281</width>
-         <height>24</height>
+         <height>28</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_50">
         <item>
          <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
           <property name="text">
            <string>sexe :</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineeditsexe_7"/>
+         <widget class="QLineEdit" name="lineeditsexe_7">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
       <widget class="QPushButton" name="pushButton_2">
        <property name="geometry">
         <rect>
-         <x>1100</x>
-         <y>370</y>
+         <x>500</x>
+         <y>0</y>
          <width>121</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt Arial ;
+    color:white;
+    background-color :#2da5d5;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;</string>
        </property>
        <property name="text">
         <string>modifier</string>
@@ -821,11 +1122,18 @@ color: rgb(255, 85, 0);</string>
       <widget class="QPushButton" name="pushButtonchercher">
        <property name="geometry">
         <rect>
-         <x>710</x>
-         <y>10</y>
-         <width>93</width>
-         <height>28</height>
+         <x>310</x>
+         <y>0</y>
+         <width>121</width>
+         <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 10pt Arial ;
+    color:white;
+    background-color :#2da5d5;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;</string>
        </property>
        <property name="text">
         <string>chercher</string>
@@ -834,12 +1142,25 @@ color: rgb(255, 85, 0);</string>
       <widget class="QComboBox" name="comboBox">
        <property name="geometry">
         <rect>
-         <x>140</x>
-         <y>10</y>
-         <width>141</width>
-         <height>22</height>
+         <x>90</x>
+         <y>0</y>
+         <width>181</width>
+         <height>41</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">  border:none;
+ 
+    font: 11pt Arial;
+                      color:white;
+                      background-color :#2da5d5;
+                      selection-background-color: rgb(254, 120, 126);</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
        <item>
         <property name="text">
          <string>cin croissant</string>
@@ -871,6 +1192,114 @@ color: rgb(255, 85, 0);</string>
         </property>
        </item>
       </widget>
+      <widget class="QWidget" name="layoutWidget_17">
+       <property name="geometry">
+        <rect>
+         <x>1200</x>
+         <y>60</y>
+         <width>281</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelcin_3">
+          <property name="styleSheet">
+           <string notr="true">font:10pt Arial;
+    color:black;</string>
+          </property>
+          <property name="text">
+           <string>CIN : </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineeditcinsup">
+          <property name="styleSheet">
+           <string notr="true">background:transparent;
+    border:none;
+   border-bottom:1px solid #2da5d5;
+    font: 12pt Arial;
+    color: #2da5d5;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">  border:none;
+ 
+    font: 11pt Arial;
+                      color:white;
+                      background-color :#2da5d5;
+                      selection-background-color: rgb(254, 120, 126);</string>
+       </property>
+       <property name="text">
+        <string>trie par :</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_10" native="true">
+       <property name="geometry">
+        <rect>
+         <x>1000</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/Downloads/imprimer.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_11" native="true">
+       <property name="geometry">
+        <rect>
+         <x>810</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/Downloads/supp.jpg);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_12" native="true">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>0</y>
+         <width>61</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*image: url(:/Downloads/chercher.png);*/
+border-image: url(:/Downloads/chercher.png);</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_13" native="true">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>0</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/Downloads/modifier.png);</string>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -880,7 +1309,7 @@ color: rgb(255, 85, 0);</string>
       <x>0</x>
       <y>0</y>
       <width>1511</width>
-      <height>538</height>
+      <height>529</height>
      </rect>
     </property>
     <attribute name="label">

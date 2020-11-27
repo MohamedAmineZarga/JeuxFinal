@@ -54,4 +54,7 @@ RESOURCES += \
     images.qrc
 
 DISTFILES += \
+    ../../Downloads/ajouter.png \
+    ../../Downloads/back.jpg \
+    ../../Downloads/back2.jpg \
     music.mp3
